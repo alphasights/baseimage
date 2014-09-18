@@ -12,4 +12,4 @@ WORKDIR /opt
 RUN curl -L -O https://github.com/kelseyhightower/confd/releases/download/v0.3.0/confd_0.3.0_linux_amd64.tar.gz
 RUN tar -zxvf confd_0.3.0_linux_amd64.tar.gz -C /usr/local/bin confd && \
     rm confd_0.3.0_linux_amd64.tar.gz
-RUN mkdir -p /etc/confd/{conf.d,templates}
+RUN mkdir -p /etc/confd/conf.d /etc/confd/templates
